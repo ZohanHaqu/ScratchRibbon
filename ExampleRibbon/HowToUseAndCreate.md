@@ -56,7 +56,7 @@ Then go to MainWindow.xaml and add this code inside of it
             </Button>
         </StackPanel>
     </TabItem>
-</TabControl>
+</TabControl>```
 
 # Step 3
 
