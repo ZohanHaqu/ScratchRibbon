@@ -1,0 +1,55 @@
+﻿<Window x:Class="ExampleRibbon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Scratch Ribbon Example" Height="450" Width="800">
+    <Grid>
+        <!-- Ribbon Bar -->
+        <TabControl VerticalAlignment="Top" Height="100" Background="LightGray">
+            <!-- Tab Home -->
+            <TabItem Header="Home" Background="#FF0056FF" Foreground="#FFBCBCC3">
+                <StackPanel Orientation="Horizontal" Margin="10,0">
+                    <!-- Ribbon Button with Image -->
+                    <Button Width="52" Height="50" BorderBrush="LightGray" Background="LightGray">
+                        <StackPanel>
+                            <Image Source="example.png" Width="32" Height="32"/>
+                            <TextBlock Text="Open" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Width="55" Height="50" BorderBrush="LightGray" Background="LightGray">
+                        <StackPanel>
+                            <Image Source="example.png" Width="32" Height="32"/>
+                            <TextBlock Text="Save" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+            <!-- Tab View -->
+            <TabItem Header="View" Foreground="#FFBCBCC3">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FF0056FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <StackPanel Orientation="Horizontal" Margin="10,0">
+                    <!-- Ribbon Button with Image -->
+                    <Button Width="57" Height="50" Background="LightGray" BorderBrush="LightGray">
+                        <StackPanel>
+                            <Image Source="example.png" Width="32" Height="32"/>
+                            <TextBlock Text="Zoom In" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Width="60" Height="50" Background="LightGray" BorderBrush="LightGray">
+                        <StackPanel>
+                            <Image Source="example.png" Width="32" Height="32"/>
+                            <TextBlock Text="Zoom Out" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+        <!-- Main Content Area -->
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" Text="TO CREATE YOUR RIBBON GO TO scratchribbon.github.io"/>
+    </Grid>
+</Window>
