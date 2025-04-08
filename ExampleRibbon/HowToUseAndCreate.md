@@ -11,6 +11,17 @@ Then go to MainWindow.xaml and add this code inside of it
 
 
 
+# How To Use ScratchRibbon
+
+To use ScratchRibbon, you would have to do a few steps
+
+# Step 1
+
+first go to the solution explorer right click your project click on add, new item, or existing item and select an image or create an image so the ribbon is able to verify the image in here
+
+# Step 2
+Then go to MainWindow.xaml and add this code inside of it
+
 ```xml
 <TabControl VerticalAlignment="Top" Height="100" Background="LightGray">
     <!-- Tab Home -->
@@ -56,7 +67,7 @@ Then go to MainWindow.xaml and add this code inside of it
             </Button>
         </StackPanel>
     </TabItem>
-</TabControl>"""
+</TabControl>
 
 # Step 3
 
